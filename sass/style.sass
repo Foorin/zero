@@ -1,0 +1,495 @@
+$text: #000000
+$button: #000000
+$text_on_button: #ffffff
+$accent: #E2B013
+$blocks: #F5F5F5
+
+@font-face 
+    font-family: Jont
+    src: url(../fonts/Jost.ttf)
+
+*
+    padding: 0
+    margin: 0
+    border: 0
+    color: black
+    text-decoration: none
+    box-sizing: border-box
+
+
+.container
+    margin: 0 auto
+    margin-top: 5px
+    width: 95%
+
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 30px
+    &__left
+        display: flex
+        gap: 30px
+        align-items: center
+
+.menu
+    display: flex
+    gap: 25px
+    font-family: Jont
+    font-size: 18px
+    & a
+        transition: .3s
+        &:hover
+            transition: .3s
+            color: $accent
+
+.buttons
+    display: flex
+    gap: 20px
+    align-items: center
+    &_buy
+        font-family: Jont
+        font-size: 18px
+        color: $text_on_button
+        background-color: $button
+        padding-top: 15px
+        padding-bottom: 15px
+        padding-right: 26px
+        padding-left: 26px
+        max-width: 170px
+        max-height: 50px
+        text-align: center
+        transition: .3s
+        &:hover
+            transition: .3s
+            background-color: $accent
+            color: $button
+
+
+.main
+    &__ui
+        margin-bottom: 150px
+    &__zero
+        margin-bottom: 100px
+    &__landingPages
+        margin-bottom: 100px
+    &__company
+        margin-bottom: 100px
+
+.ui
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &_left
+        &_sticker
+            color: $text_on_button
+            background-color: $accent
+            font-family: Jont
+            font-size: 14px
+            text-transform: uppercase
+            text-align: center
+            margin-bottom: 40px
+            max-width: 130px
+        &_title
+            font-family: Jont
+            font-size: 96px
+            margin-bottom: 30px
+        &_secTitle
+            font-family: Jont
+            font-size: 50px
+            margin-bottom: 40px
+        &_text
+            font-family: Jont
+            font-size: 26px
+            margin-bottom: 80px
+        &_utp
+            max-width: 520px
+            display: flex
+            gap: 66px
+
+
+.utp
+    display: flex
+    flex-direction: column
+    align-items: center
+    &_text
+        text-align: center
+        font-family: Jont
+        font-size: 16px
+
+.zero
+    display: flex
+    justify-content: space-between
+    &_left
+        &_img
+            max-width: 50%
+    &_right
+        max-width: 48%
+        &_title
+            font-family: Jont
+            font-size: 96px
+            margin-bottom: 40px
+        &_text
+            font-family: Jont
+            font-size: 22px
+            margin-bottom: 30px
+
+.info
+    max-width: 60%
+    display: flex
+    gap: 10px
+    flex-wrap: wrap
+    &_button
+        text-transform: uppercase
+        font-family: Jont
+        font-size: 14px
+        padding-top: 10px
+        padding-bottom: 10px
+        padding-left: 15px
+        padding-right: 30px
+        // height: 40px
+        // width: 124px
+        color: $text_on_button
+        background-color: $button
+        transition: .3s
+        &:hover
+            transition: .3s
+            background-color: $accent
+            color: $button
+
+.landingPages
+    &_title
+        width: 460px
+        font-family: Jont
+        font-size: 36px
+        text-transform: uppercase
+        color: $text_on_button
+        background-color: $button
+        padding-left: 30px
+        padding-right: 100px
+        padding-top: 8px
+        padding-bottom: 8px
+        margin-bottom: 50px
+
+.company
+    &_title
+        width: 460px
+        font-family: Jont
+        font-size: 36px
+        text-transform: uppercase
+        color: $text_on_button
+        background-color: $button
+        padding-left: 30px
+        padding-right: 100px
+        padding-top: 8px
+        padding-bottom: 8px
+        margin-bottom: 50px
+
+.cms
+    &_title
+        width: 460px
+        font-family: Jont
+        font-size: 36px
+        text-transform: uppercase
+        color: $text_on_button
+        background-color: $button
+        padding-left: 30px
+        padding-right: 100px
+        padding-top: 8px
+        padding-bottom: 8px
+        margin-bottom: 50px
+
+.utility
+    &_title
+        width: 460px
+        font-family: Jont
+        font-size: 36px
+        text-transform: uppercase
+        color: $text_on_button
+        background-color: $button
+        padding-left: 30px
+        padding-right: 100px
+        padding-top: 8px
+        padding-bottom: 8px
+        margin-bottom: 50px
+
+.pages
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    &_page
+        padding-top: 30px
+        padding-left: 30px
+        padding-right: 30px
+        padding-bottom: 50px
+        background-color: $blocks
+        margin-bottom: 60px
+        &_img
+            margin-bottom: 15px
+        &_name
+            font-family: Jont
+            font-size: 26px
+            text-transform: uppercase
+
+.footer
+    &_top
+        display: flex
+        justify-content: space-between
+        margin-bottom: 100px
+        &_left
+            &_title
+                display: block
+                font-family: Jont
+                font-size: 26px
+                margin-bottom: 30px
+        &_right
+            display: flex
+            gap: 36px
+    &_bottom
+        display: flex
+        justify-content: space-between
+        font-family: Jont
+        font-size: 10px
+        text-transform: uppercase
+.subscribe
+    display: flex
+    font-size: 0px
+    margin-bottom: 200px
+    &_input
+        border: 1px solid $button
+        width: 370px
+        height: 40px
+        color: #000
+    &_button
+        font-family: Jont
+        font-size: 15px
+        height: 40px
+        padding-left: 10px
+        padding-right: 20px
+        color: $text_on_button
+        background-color: $button
+
+.social
+    display: flex
+    gap: 20px
+
+.group
+    display: flex
+    flex-direction: column
+    gap: 13px
+    &_title
+        font-family: Jont
+        font-size: 24px
+        margin-bottom: 20px
+        transition: .3s
+        &:hover
+            color: $accent
+    &_text
+        font-family: Jont
+        font-size: 15px
+        transition: .3s
+        &:hover
+            color: $accent
+
+
+@media screen and (max-width: 1380px)
+    .ui
+        gap: 30px
+        &_right
+            &_img
+                max-width: 100%
+    .zero
+        gap: 30px
+        &_right
+            &_title
+                font-size: 80px
+            &_text
+                font-size: 18px
+
+    .info
+        max-width: 80% 
+        
+    .pages
+        &_page
+            &_img
+                max-width: 500px
+
+
+@media screen and (max-width: 1200px)
+    .ui
+        &_left
+            &_title
+                font-size: 80px
+            &_secTitle
+                font-size: 40px
+            &_text
+                font-size: 20px
+
+    .info
+        max-width: 90% 
+
+    .pages
+        &_page
+            padding-left: 15px
+            padding-right: 15px
+            margin-bottom: 50px
+            &_img
+                max-width: 480px
+
+@media screen and (max-width:1180px)
+    .pages
+        &_page
+            &_img
+                width: 480px
+
+@media screen and (max-width:1070px)
+    .header
+        padding-top: 10px
+    .logo
+        &_img
+            max-width: 80px
+    .buttons
+        &_buy
+            font-size: 14px
+
+    .ui
+        &_left
+            &_sticker
+                margin-bottom: 20px
+            &_title
+                font-size: 60px
+                margin-bottom: 5px
+            &_secTitle
+                font-size: 20px
+            &_text
+                font-size: 14px
+
+    .utp
+        &_text
+            font-size: 12px
+
+
+    .pages
+        &_page
+            padding-left: 30px
+            padding-right: 30px
+            &_img
+                width: 380px
+
+@media screen and (max-width:950px)
+    .zero
+        &_right
+            &_title
+                font-size: 60px
+            &_text
+                font-size: 16px
+
+    .info
+        &_button
+            font-size: 12px
+
+    .pages
+        &_page
+            padding-left: 30px
+            padding-right: 30px
+            &_img
+                width: 350px
+
+    .subscribe
+        &_input
+            width: 270px
+
+    .social
+        & img
+            max-width: 60px
+
+@media screen and (max-width:870px)
+    .buttons
+        &_buy
+            font-size: 12px
+            padding-top: 10px
+            padding-bottom: 10px
+            padding-right: 18px
+            padding-left: 18px
+        
+    .utp
+        &_img
+            & img
+                max-width: 40px
+            &_text
+                font-size: 10px
+
+    .ui
+        &_left
+            &_utp
+                gap: 40px
+            &_sticker
+                font-size: 12px
+            &_title
+                font-size: 40px
+            &_text
+                margin-bottom: 50px
+
+
+    .zero
+        &_right
+            &_title
+                font-size: 60px
+
+    .pages
+        &_page
+            padding-left: 30px
+            padding-right: 30px
+            padding-bottom: 40px
+            &_img
+                width: 300px
+
+    .footer
+        &_top
+            &_right
+                gap: 20px
+
+    .group
+        &_title
+            font-size: 16px
+        &_text
+            font-size: 14px
+
+@media screen and (max-width:760px)
+    .zero
+        &_right
+            &_title
+                font-size: 40px
+            &_text
+                font-size: 14px
+
+    .info
+        &_button
+            font-size: 10px
+            padding-top: 7px
+            padding-bottom: 7px
+            padding-left: 10px
+            padding-right: 20px
+
+    .pages
+        &_page
+            padding-left: 20px
+            padding-right: 20px
+            padding-bottom: 35px
+            &_img
+                width: 290px
+
+    .footer
+        &_top
+            &_right
+                gap: 20px
+
+    .subscribe
+        &_input
+            width: 200px
+
+    .group
+        &_title
+            font-size: 16px
+        &_text
+            font-size: 14px

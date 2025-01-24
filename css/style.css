@@ -1,0 +1,554 @@
+@font-face {
+  font-family: Jont;
+  src: url(../fonts/Jost.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  color: black;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 5px;
+  width: 95%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header__left {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  gap: 25px;
+  font-family: Jont;
+  font-size: 18px;
+}
+
+.menu a {
+  transition: .3s;
+}
+
+.menu a:hover {
+  transition: .3s;
+  color: #E2B013;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.buttons_buy {
+  font-family: Jont;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #000000;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 26px;
+  padding-left: 26px;
+  max-width: 170px;
+  max-height: 50px;
+  text-align: center;
+  transition: .3s;
+}
+
+.buttons_buy:hover {
+  transition: .3s;
+  background-color: #E2B013;
+  color: #000000;
+}
+
+.main__ui {
+  margin-bottom: 150px;
+}
+
+.main__zero {
+  margin-bottom: 100px;
+}
+
+.main__landingPages {
+  margin-bottom: 100px;
+}
+
+.main__company {
+  margin-bottom: 100px;
+}
+
+.ui {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ui_left_sticker {
+  color: #ffffff;
+  background-color: #E2B013;
+  font-family: Jont;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 130px;
+}
+
+.ui_left_title {
+  font-family: Jont;
+  font-size: 96px;
+  margin-bottom: 30px;
+}
+
+.ui_left_secTitle {
+  font-family: Jont;
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+
+.ui_left_text {
+  font-family: Jont;
+  font-size: 26px;
+  margin-bottom: 80px;
+}
+
+.ui_left_utp {
+  max-width: 520px;
+  display: flex;
+  gap: 66px;
+}
+
+.utp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.utp_text {
+  text-align: center;
+  font-family: Jont;
+  font-size: 16px;
+}
+
+.zero {
+  display: flex;
+  justify-content: space-between;
+}
+
+.zero_left_img {
+  max-width: 50%;
+}
+
+.zero_right {
+  max-width: 48%;
+}
+
+.zero_right_title {
+  font-family: Jont;
+  font-size: 96px;
+  margin-bottom: 40px;
+}
+
+.zero_right_text {
+  font-family: Jont;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.info {
+  max-width: 60%;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.info_button {
+  text-transform: uppercase;
+  font-family: Jont;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 30px;
+  color: #ffffff;
+  background-color: #000000;
+  transition: .3s;
+}
+
+.info_button:hover {
+  transition: .3s;
+  background-color: #E2B013;
+  color: #000000;
+}
+
+.landingPages_title {
+  width: 460px;
+  font-family: Jont;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #000000;
+  padding-left: 30px;
+  padding-right: 100px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 50px;
+}
+
+.company_title {
+  width: 460px;
+  font-family: Jont;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #000000;
+  padding-left: 30px;
+  padding-right: 100px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 50px;
+}
+
+.cms_title {
+  width: 460px;
+  font-family: Jont;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #000000;
+  padding-left: 30px;
+  padding-right: 100px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 50px;
+}
+
+.utility_title {
+  width: 460px;
+  font-family: Jont;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #000000;
+  padding-left: 30px;
+  padding-right: 100px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 50px;
+}
+
+.pages {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.pages_page {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  background-color: #F5F5F5;
+  margin-bottom: 60px;
+}
+
+.pages_page_img {
+  margin-bottom: 15px;
+}
+
+.pages_page_name {
+  font-family: Jont;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+.footer_top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.footer_top_left_title {
+  display: block;
+  font-family: Jont;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.footer_top_right {
+  display: flex;
+  gap: 36px;
+}
+
+.footer_bottom {
+  display: flex;
+  justify-content: space-between;
+  font-family: Jont;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.subscribe {
+  display: flex;
+  font-size: 0px;
+  margin-bottom: 200px;
+}
+
+.subscribe_input {
+  border: 1px solid #000000;
+  width: 370px;
+  height: 40px;
+  color: #000;
+}
+
+.subscribe_button {
+  font-family: Jont;
+  font-size: 15px;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 20px;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.social {
+  display: flex;
+  gap: 20px;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.group_title {
+  font-family: Jont;
+  font-size: 24px;
+  margin-bottom: 20px;
+  transition: .3s;
+}
+
+.group_title:hover {
+  color: #E2B013;
+}
+
+.group_text {
+  font-family: Jont;
+  font-size: 15px;
+  transition: .3s;
+}
+
+.group_text:hover {
+  color: #E2B013;
+}
+
+@media screen and (max-width: 1380px) {
+  .ui {
+    gap: 30px;
+  }
+  .ui_right_img {
+    max-width: 100%;
+  }
+  .zero {
+    gap: 30px;
+  }
+  .zero_right_title {
+    font-size: 80px;
+  }
+  .zero_right_text {
+    font-size: 18px;
+  }
+  .info {
+    max-width: 80%;
+  }
+  .pages_page_img {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .ui_left_title {
+    font-size: 80px;
+  }
+  .ui_left_secTitle {
+    font-size: 40px;
+  }
+  .ui_left_text {
+    font-size: 20px;
+  }
+  .info {
+    max-width: 90%;
+  }
+  .pages_page {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 50px;
+  }
+  .pages_page_img {
+    max-width: 480px;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .pages_page_img {
+    width: 480px;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .header {
+    padding-top: 10px;
+  }
+  .logo_img {
+    max-width: 80px;
+  }
+  .buttons_buy {
+    font-size: 14px;
+  }
+  .ui_left_sticker {
+    margin-bottom: 20px;
+  }
+  .ui_left_title {
+    font-size: 60px;
+    margin-bottom: 5px;
+  }
+  .ui_left_secTitle {
+    font-size: 20px;
+  }
+  .ui_left_text {
+    font-size: 14px;
+  }
+  .utp_text {
+    font-size: 12px;
+  }
+  .pages_page {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .pages_page_img {
+    width: 380px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .zero_right_title {
+    font-size: 60px;
+  }
+  .zero_right_text {
+    font-size: 16px;
+  }
+  .info_button {
+    font-size: 12px;
+  }
+  .pages_page {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .pages_page_img {
+    width: 350px;
+  }
+  .subscribe_input {
+    width: 270px;
+  }
+  .social img {
+    max-width: 60px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .buttons_buy {
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+  .utp_img img {
+    max-width: 40px;
+  }
+  .utp_img_text {
+    font-size: 10px;
+  }
+  .ui_left_utp {
+    gap: 40px;
+  }
+  .ui_left_sticker {
+    font-size: 12px;
+  }
+  .ui_left_title {
+    font-size: 40px;
+  }
+  .ui_left_text {
+    margin-bottom: 50px;
+  }
+  .zero_right_title {
+    font-size: 60px;
+  }
+  .pages_page {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+  }
+  .pages_page_img {
+    width: 300px;
+  }
+  .footer_top_right {
+    gap: 20px;
+  }
+  .group_title {
+    font-size: 16px;
+  }
+  .group_text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .zero_right_title {
+    font-size: 40px;
+  }
+  .zero_right_text {
+    font-size: 14px;
+  }
+  .info_button {
+    font-size: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 20px;
+  }
+  .pages_page {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 35px;
+  }
+  .pages_page_img {
+    width: 290px;
+  }
+  .footer_top_right {
+    gap: 20px;
+  }
+  .subscribe_input {
+    width: 200px;
+  }
+  .group_title {
+    font-size: 16px;
+  }
+  .group_text {
+    font-size: 14px;
+  }
+}
